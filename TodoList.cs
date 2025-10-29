@@ -43,11 +43,20 @@ internal class TodoList
     }
 
 
+    /// Behavior: Writes that the loop is quitting.
+    /// Exceptions: None
+    /// Returns: None
+    /// Parameters: None
     private static void QuitLoop() {
         Console.WriteLine("Quitting...");
     }
 
 
+    /// Behavior: Adds a given task to the user's to-do list. Requires the task to have some text
+    /// Exceptions: None
+    /// Returns: None
+    /// Parameters: List
+    /// List string to have access to to-do list to add tasks.
     private static void AddTask(List<string> toDoList) {
         Console.Write("What task would you like to add: ");
         string task = Console.ReadLine();
@@ -62,6 +71,11 @@ internal class TodoList
     }
 
 
+    /// Behavior: Removes a task at a given index in the to-do list. Requires list to have at least one task. Requires
+    /// user to remove task in range of task numbers.
+    /// Exceptions: None
+    /// Returns: None
+    /// Parameters: List string to have access to to-do list to remove tasks.
     private static void RemoveTask(List<string> toDoList) {
         DisplayToDoList(toDoList);
 
@@ -92,6 +106,10 @@ internal class TodoList
     }
 
 
+    /// Behavior: Displays numbered to-do list.
+    /// Exceptions: None
+    /// Returns: None
+    /// Parameters: List string to have access to to-do list to list all tasks.
     private static void DisplayToDoList(List<string> toDoList) {
         Console.WriteLine("Current todo list: ");
 
@@ -106,6 +124,10 @@ internal class TodoList
     }
 
 
+    /// Behavior: Prints all main loop options that the user can select.
+    /// Exceptions: None
+    /// Returns: None
+    /// Parameters: None
     private static void PrintMainLoopOption() {
         Console.WriteLine("(a)dd a task");
         Console.WriteLine("(r)emove a task");

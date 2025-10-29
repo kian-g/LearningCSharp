@@ -1,1 +1,1 @@
-First C# project to learn the language.
+My first C# project to learn the language.

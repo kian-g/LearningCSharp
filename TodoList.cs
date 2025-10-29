@@ -55,8 +55,7 @@ internal class TodoList
     /// Behavior: Adds a given task to the user's to-do list. Requires the task to have some text
     /// Exceptions: None
     /// Returns: None
-    /// Parameters: List
-    /// List string to have access to to-do list to add tasks.
+    /// Parameters: List string to have access to to-do list to add tasks.
     private static void AddTask(List<string> toDoList) {
         Console.Write("What task would you like to add: ");
         string task = Console.ReadLine();
